@@ -5,7 +5,7 @@ SWIFT
 
 
 | Contents | Status |
-| :---:  | :---:  |
+| :---  | :---:  |
 | Xcode Setup  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Variables and Constants  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Data Types  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
@@ -28,7 +28,24 @@ SWIFT
 <hr>
 
 | Projects | Status |
-| :---:  | :---:  |
+| :---  | :---:  |
 | Calculator  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
-| Counting Clicks  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
+| Counting clicks  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Found the random number  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
+| Countdown mobile app  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
+| Break time reminder mobile app  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
+| Mood logging mobile app  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
+| To-do list mobile app  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
+| Joke telling bot mobile app  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
+| Wallpaper mobile app  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
+| Weather App  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
+| Financial App  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
+| Question Answer App  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
+| Build a Sticker App  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
+| Build a Spotify clone  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
+| Build an Instagram Clone  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
+| Build a Netflix Clone  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
+| 2048  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
+| Radio station app  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
+| Visual calendar  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
+| A Hacker News reader  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
