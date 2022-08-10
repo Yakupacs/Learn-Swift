@@ -25,6 +25,14 @@ SWIFT
 | Arrays  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Dictionaries  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 
+<hr>
+
+| Projects | Status |
+| :---:  | :---:  |
+| Calculator  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
+| Counting Clicks  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
+| Found the random number  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
+
 <br>
 <br>
 <img src="https://user-images.githubusercontent.com/73075252/184024923-58350f22-e9a6-450b-b0be-cc417f0c4c68.jpeg">
