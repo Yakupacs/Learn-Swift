@@ -27,7 +27,7 @@ SWIFT
 
 <hr>
 
-| Projects | Status |
+| Projects | Working |
 | :---  | :---:  |
 | Calculator  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Counting clicks  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
@@ -45,7 +45,7 @@ SWIFT
 | Build a Spotify clone  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
 | Build an Instagram Clone  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
 | Build a Netflix Clone  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
-| 2048  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
+| 2048 game  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
 | Radio station app  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
 | Visual calendar  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
 | A Hacker News reader  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
