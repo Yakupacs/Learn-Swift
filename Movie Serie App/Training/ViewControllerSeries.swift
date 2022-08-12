@@ -2,7 +2,7 @@
 //  ViewControllerSeries.swift
 //  Training
 //
-//  Created by Enes Keskin on 8/12/22.
+//  Created by Yakup AÇIŞ on 8/12/22.
 //
 
 import UIKit
