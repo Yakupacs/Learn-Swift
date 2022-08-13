@@ -17,8 +17,27 @@ class ViewControllerDetails: UIViewController, UIImagePickerControllerDelegate, 
     @IBOutlet weak var productName: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     
+    
+    var selectedProductName = ""
+    var selectedProductUUID : UUID?
+    var selectedName = ""
+    var selectedUUID : UUID?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        if selectedProductName != ""{
+            // See fore data selected product info
+        }
+        else{
+            productName.text = ""
+            productSize.text = ""
+            productPrice.text = ""
+            productLocation.text = ""
+            productTrademark.text = ""
+        }
+        
 
         // Click to screen
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(keywordClose))
@@ -73,6 +92,11 @@ class ViewControllerDetails: UIViewController, UIImagePickerControllerDelegate, 
         } catch{
             print("Error")
         }
+        
+        
+        NotificationCenter.default.post(name: NSNotification.Name("enteredData"), object: nil)
+        self.navigationController?.popViewController(animated: true)
+        
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
