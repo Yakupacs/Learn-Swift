@@ -16,10 +16,10 @@ SWIFT
 | While Loop  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Functions Pt. 1  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Functions Pt. 2  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
-| Classes  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
+| Classes  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Subclassing  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | UIKit  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
-| Initializers | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
+| Initializers | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Optionals  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | More Initializers  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
 | Arrays  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
