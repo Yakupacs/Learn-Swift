@@ -13,6 +13,7 @@ class ViewControllerLogin: UIViewController {
     
     var usernameArray = [String]()
     var passwordArray = [String]()
+    var idArray = [UUID]()
     
     @IBOutlet weak var usernameTxt: UITextField!
     @IBOutlet weak var passwordTxt: UITextField!
@@ -20,14 +21,13 @@ class ViewControllerLogin: UIViewController {
     
     var sendUsername = ""
     var sendPassword = ""
-    
+    var i = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         getUserData()
-        print(usernameArray)
-        print(passwordArray)
-        // Do any additional setup after loading the view.
+        print(usernameArray, passwordArray, idArray)
+        self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
     @objc func alertFunction(head : String, content : String){
@@ -41,42 +41,28 @@ class ViewControllerLogin: UIViewController {
        }
     
     @IBAction func loginFunc(_ sender: Any) {
-        
+        i = 0
         if usernameTxt.text != "" && passwordTxt.text != ""{
-            for usernames in usernameArray{
-                if(usernames == usernameTxt.text!){
-                    for passwords in passwordArray{
-                        if(passwords == passwordTxt.text!){
-                            sendUsername = usernameTxt.text!
-                            sendPassword = passwordTxt.text!
-                            performSegue(withIdentifier: "toUserDetails", sender: nil)
-                            
-                        }
-                        else{
-                            alertFunction(head: "Warning!", content: "Username or password is incorrect.")
-                        }
+            while (usernameArray.count > i){
+                if (usernameArray[i] == usernameTxt.text!)
+                {
+                    if passwordArray[i] == passwordTxt.text{
+                        performSegue(withIdentifier: "toUserDetails", sender: nil)
+                    }
+                    else{
+                        alertFunc(head: "Warning", content: "The password or username are wrong")
                     }
                 }
-                else{
-                    alertFunction(head: "Warning!", content: "Username or password is incorrect.")
-                }
+                i = i + 1
             }
         }
-
-        
-        
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toUserDetails"{
-            let desVC = segue.destination as! ViewControllerUserDetails
-            desVC.password = sendPassword
-            desVC.username = sendUsername
-            
+        else{
+            alertFunc(head: "Warning", content: "Please Enter Username or Password!")
         }
     }
     
     func getUserData(){
+        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "UserData")
@@ -92,12 +78,45 @@ class ViewControllerLogin: UIViewController {
                 if let password = user.value(forKey: "password") as? String{
                     passwordArray.append(password)
                 }
+                if let id = user.value(forKey: "id") as? UUID{
+                    idArray.append(id)
+                }
             }
             
         } catch {
             print("Warning! Data is not reload.")
         }
+        
     }
+ 
+    @IBAction func newAccount(_ sender: Any) {
+        performSegue(withIdentifier: "loginToRegister", sender: nil)
 
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toUserDetails"{
+            let destVC = segue.destination as! ViewControllerUserDetails
+            i = 0
+            while (usernameArray.count > i){
+                if (usernameArray[i] == usernameTxt.text!)
+                {
+                    if passwordArray[i] == passwordTxt.text{
+                        destVC.selectedUsername = usernameArray[i]
+                        destVC.selectedID = idArray[i]
+                    }
+                }
+                i = i + 1
+            }
+        }
+    }
+    
+    @objc func alertFunc(head : String, content : String){
+        let warnMessage = UIAlertController(title: head, message: content, preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "Okey", style: .default) { (UIAlertAction) in
+        }
+        warnMessage.addAction(okButton)
+        self.present(warnMessage, animated: true, completion: nil)
+    }
     
 }

@@ -26,6 +26,9 @@ class ViewControllerRegister: UIViewController, UIImagePickerControllerDelegate,
         super.viewDidLoad()
         
         
+        registerButton.isEnabled = false
+        
+        
         //Click to imageView
         imageView.isUserInteractionEnabled = true
         let imageGestRecog = UITapGestureRecognizer(target: self, action: #selector(selectImage))
@@ -47,6 +50,7 @@ class ViewControllerRegister: UIViewController, UIImagePickerControllerDelegate,
     //Show editedImage on imageView
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         imageView.image = info[.editedImage] as? UIImage
+        registerButton.isEnabled = true
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -56,9 +60,8 @@ class ViewControllerRegister: UIViewController, UIImagePickerControllerDelegate,
         
         if nameTxt.text != "" && surnameTxt.text != "" && telephoneTxt.text != "" && ageTxt.text != "" && usernameTxt.text != "" && passwordTxt.text != "" && password2Txt.text != ""
         {
-        
             if passwordTxt.text == password2Txt.text{
-                
+                    
                 
                 let appDelegate = UIApplication.shared.delegate as! AppDelegate
                 let context = appDelegate.persistentContainer.viewContext
@@ -95,7 +98,10 @@ class ViewControllerRegister: UIViewController, UIImagePickerControllerDelegate,
 
     }
     
-
+    @IBAction func backLogin(_ sender: Any) {
+        performSegue(withIdentifier: "backLogin", sender: nil)
+    }
+    
     
     
 }
