@@ -10,6 +10,7 @@ import CoreData
 
 class ViewControllerDetails: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    @IBOutlet weak var btnSave: UIButton!
     @IBOutlet weak var productTrademark: UITextField!
     @IBOutlet weak var productLocation: UITextField!
     @IBOutlet weak var productSize: UITextField!
@@ -20,17 +21,78 @@ class ViewControllerDetails: UIViewController, UIImagePickerControllerDelegate, 
     
     var selectedProductName = ""
     var selectedProductUUID : UUID?
+    
     var selectedName = ""
     var selectedUUID : UUID?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         if selectedProductName != ""{
+            
+            btnSave.isHidden = true
+            
+            
             // See fore data selected product info
+            if let uuidString = selectedProductUUID?.uuidString{
+                
+                // if get UUID
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                let context = appDelegate.persistentContainer.viewContext
+                let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Shopping")
+                
+                // Add Filter
+                fetchRequest.predicate = NSPredicate(format: "id = %@", uuidString)
+                
+                fetchRequest.returnsObjectsAsFaults = false
+                
+                do {
+                    let results = try context.fetch(fetchRequest)
+                    
+                    if results.count > 0{
+                        
+                        for result in results as! [NSManagedObject]{
+                            
+                            if let name = result.value(forKey: "name") as? String{
+                                productName.text = name
+                            }
+                            
+                            if let price = result.value(forKey: "price") as? Int{
+                                productPrice.text = String(price)
+                            }
+                            
+                            if let size = result.value(forKey: "size") as? String{
+                                productSize.text = size
+                            }
+                            
+                            if let location = result.value(forKey: "location") as? String{
+                                productLocation.text = location
+                            }
+                            
+                            if let trademark = result.value(forKey: "trademark") as? String{
+                                productTrademark.text = trademark
+                            }
+                                
+                            if let imageData = result.value(forKey: "image") as? Data{
+                                let image = UIImage(data: imageData)
+                                imageView.image = image
+                            }
+                        }
+                        
+                    }
+                    
+                } catch{
+                    print("Error")
+                }
+                
+            }
+            
         }
         else{
+            btnSave.isHidden = false
+            btnSave.isEnabled = false
             productName.text = ""
             productSize.text = ""
             productPrice.text = ""
@@ -43,19 +105,21 @@ class ViewControllerDetails: UIViewController, UIImagePickerControllerDelegate, 
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(keywordClose))
         view.addGestureRecognizer(gestureRecognizer)
         
+        
         // Click to imageView
         imageView.isUserInteractionEnabled = true
         let imageGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(selectImage))
         imageView.addGestureRecognizer(imageGestureRecognizer)
     }
     
+    // Keyword close
     @objc func keywordClose(){
-        // Keyword close
         view.endEditing(true)
     }
     
+
+    // Selected Image forward photoLibrary and editing
     @objc func selectImage(){
-        // Selected Image forward photoLibrary and editing
         let picker = UIImagePickerController()
         picker.delegate = self
         picker.sourceType = .photoLibrary
@@ -63,6 +127,8 @@ class ViewControllerDetails: UIViewController, UIImagePickerControllerDelegate, 
         present(picker, animated: true, completion: nil)
     }
     
+    
+    // Save Button
     @IBAction func saveButton(_ sender: Any) {
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -94,15 +160,19 @@ class ViewControllerDetails: UIViewController, UIImagePickerControllerDelegate, 
         }
         
         
+        // Notification Center
         NotificationCenter.default.post(name: NSNotification.Name("enteredData"), object: nil)
         self.navigationController?.popViewController(animated: true)
         
+        
+        
     }
     
+    // Show editedImage on imageView
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
-        // Show editedImage on imageView
         imageView.image = info[.editedImage] as? UIImage
+        btnSave.isEnabled = true
         self.dismiss(animated: true, completion: nil)
         
     }

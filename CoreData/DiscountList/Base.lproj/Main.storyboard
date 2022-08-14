@@ -97,6 +97,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="n50-He-TF7"/>
                     <connections>
+                        <outlet property="btnSave" destination="rMw-Ua-YUi" id="MBB-Er-hVn"/>
                         <outlet property="imageView" destination="3AA-84-GhH" id="aMt-i8-qlv"/>
                         <outlet property="productLocation" destination="FMw-x1-57F" id="8tj-uL-d7v"/>
                         <outlet property="productName" destination="tPM-Ee-Enp" id="aMZ-vw-vw6"/>
