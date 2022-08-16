@@ -29,11 +29,15 @@ SWIFT
 
 | Projects | Working |
 | :---  | :---:  |
-| Calculator  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
+| Iphone Calculator  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
+| Iphone Contacts  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
+| Simple Stop Watching  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
+| Movie Serie App  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Counting clicks  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Found the random number  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Facebook Login  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Catch The User  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
+| Maps App  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Countdown mobile app  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
 | Break time reminder mobile app  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
 | Mood logging mobile app  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
