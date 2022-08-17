@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -35,6 +36,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="addButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iwh-ea-kEf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAO-67-Oav">
                                 <rect key="frame" x="20" y="42" width="68" height="33"/>
@@ -43,7 +47,7 @@
                                 <state key="normal" title="Gruplar"/>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vTb-bw-fcT">
-                                <rect key="frame" x="5" y="125" width="389" height="769"/>
+                                <rect key="frame" x="6" y="125" width="388" height="769"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -58,11 +62,281 @@
                         <outlet property="groupsButton" destination="AAO-67-Oav" id="suU-Rh-8yo"/>
                         <outlet property="searchTxt" destination="AZq-Eh-KcJ" id="SHr-og-f4y"/>
                         <outlet property="tableView" destination="vTb-bw-fcT" id="DUH-Su-dbQ"/>
+                        <segue destination="6oX-zW-rtJ" kind="show" identifier="toAdd" id="ZiP-QY-phF"/>
+                        <segue destination="HTF-vi-0sd" kind="presentation" identifier="toDetails" modalPresentationStyle="fullScreen" id="TeX-Qj-ocQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="528.98550724637687" y="137.94642857142856"/>
         </scene>
+        <!--View Controller Add User-->
+        <scene sceneID="IW8-RP-RnQ">
+            <objects>
+                <viewController id="6oX-zW-rtJ" customClass="ViewControllerAddUser" customModule="Iphone_Contacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gWA-Lp-d8J">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68e-Fh-FSG">
+                                <rect key="frame" x="20" y="20" width="68" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Vazgeç"/>
+                                <connections>
+                                    <action selector="backButton:" destination="6oX-zW-rtJ" eventType="touchUpInside" id="GTg-OH-Wyi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8eq-xc-sDb">
+                                <rect key="frame" x="326" y="20" width="68" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Bitti"/>
+                                <connections>
+                                    <action selector="saveButton:" destination="6oX-zW-rtJ" eventType="touchUpInside" id="P0N-Gt-veu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLG-EJ-Bby">
+                                <rect key="frame" x="168" y="244" width="79" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="Fotoğraf Ekle"/>
+                                <connections>
+                                    <action selector="addPhoto:" destination="6oX-zW-rtJ" eventType="touchUpInside" id="Gpp-9x-DG4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yeni Kişi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOH-wJ-k8w">
+                                <rect key="frame" x="162" y="23" width="90" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="userPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="Scj-KW-iuD">
+                                <rect key="frame" x="135" y="91" width="145" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Soyad" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GI1-FT-7YU">
+                                <rect key="frame" x="0.0" y="323" width="414" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Şirket" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wh9-1t-RiK">
+                                <rect key="frame" x="0.0" y="363" width="414" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="telefon ekle" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QxL-9F-E71">
+                                <rect key="frame" x="0.0" y="445" width="414" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="e-posta ekle" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gxC-2Z-6y4">
+                                <rect key="frame" x="0.0" y="527" width="414" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ad" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TIl-mk-1dc">
+                                <rect key="frame" x="0.0" y="283" width="414" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9fW-dD-fjZ"/>
+                        <color key="backgroundColor" red="0.057266568375193831" green="0.091700015623487618" blue="0.098092480964466988" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qRt-KQ-tg3"/>
+                    <connections>
+                        <outlet property="addImage" destination="rLG-EJ-Bby" id="dpt-Ei-XmW"/>
+                        <outlet property="imageView" destination="Scj-KW-iuD" id="U77-qX-IKV"/>
+                        <outlet property="saveButton" destination="8eq-xc-sDb" id="TQ8-yP-lnM"/>
+                        <outlet property="txtAddEmail" destination="gxC-2Z-6y4" id="qVj-GV-BE2"/>
+                        <outlet property="txtAddTelephone" destination="QxL-9F-E71" id="oj0-9b-Omq"/>
+                        <outlet property="txtCompany" destination="Wh9-1t-RiK" id="qCJ-9s-CKS"/>
+                        <outlet property="txtName" destination="TIl-mk-1dc" id="kfA-4f-Ze9"/>
+                        <outlet property="txtSurname" destination="GI1-FT-7YU" id="Zyj-4g-2E4"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toBack" animates="NO" modalPresentationStyle="fullScreen" id="QUY-MY-kH7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tl1-Md-8Ld" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1378" y="-139"/>
+        </scene>
+        <!--View Controller Details-->
+        <scene sceneID="rsM-Iw-awo">
+            <objects>
+                <viewController id="HTF-vi-0sd" customClass="ViewControllerDetails" customModule="Iphone_Contacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o0g-Jz-ac6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBm-hA-G0F">
+                                <rect key="frame" x="20" y="44" width="68" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="&lt; Kişiler"/>
+                                <connections>
+                                    <action selector="backButton:" destination="6oX-zW-rtJ" eventType="touchUpInside" id="9je-3F-g4T"/>
+                                    <action selector="btnBack:" destination="HTF-vi-0sd" eventType="touchUpInside" id="1lm-Ww-ywV"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="toBack2" modalPresentationStyle="fullScreen" id="Yri-7n-xT8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMr-2b-Q8Z">
+                                <rect key="frame" x="326" y="44" width="68" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Düzenle"/>
+                                <connections>
+                                    <action selector="backButton:" destination="6oX-zW-rtJ" eventType="touchUpInside" id="1Fi-zr-fBI"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="userPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="a4E-Cs-Dfs">
+                                <rect key="frame" x="151" y="81" width="112" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nA-WU-R7p">
+                                <rect key="frame" x="28" y="206" width="358" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXw-Lr-AVv">
+                                <rect key="frame" x="15" y="267" width="90" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.11372549019607843" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="mesaj"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkZ-us-5hi">
+                                <rect key="frame" x="15" y="358" width="384" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1137254902" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="telefon">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uk9-1L-qZY">
+                                <rect key="frame" x="15" y="585" width="384" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1137254902" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Mesaj Gönder">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1lV-Ia-Ykb">
+                                <rect key="frame" x="15" y="645" width="384" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1137254902" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Kişiyi Paylaş">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Td2-fC-UeY">
+                                <rect key="frame" x="15" y="705" width="384" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1137254902" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Hızlı Aramaya Ekle">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ev-5F-Kre">
+                                <rect key="frame" x="15" y="764" width="384" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1137254902" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Acil Durum Kişileri'ni Ekle">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FS0-nL-Y4y">
+                                <rect key="frame" x="15" y="824" width="384" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1137254902" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Konumumu Paylaş">
+                                    <color key="titleColor" systemColor="linkColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4vn-GX-Jpl">
+                                <rect key="frame" x="113" y="267" width="90" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1137254902" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="ara"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9q-dZ-EvA">
+                                <rect key="frame" x="211" y="267" width="90" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1137254902" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="görüntülü"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhu-it-7gb">
+                                <rect key="frame" x="309" y="267" width="90" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1137254902" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="e-posta"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Company" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gl-oN-D5h">
+                                <rect key="frame" x="28" y="238" width="358" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="Notlar" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pzr-ee-07B">
+                                <rect key="frame" x="15" y="445" width="384" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.11372549019607843" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.11372549019607843" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7hp-Ev-gw5"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnCall" destination="4vn-GX-Jpl" id="wTc-42-9UK"/>
+                        <outlet property="btnDownMessage" destination="Uk9-1L-qZY" id="agg-wS-klA"/>
+                        <outlet property="btnEmail" destination="dhu-it-7gb" id="Ers-JJ-NGu"/>
+                        <outlet property="btnEmergency" destination="4ev-5F-Kre" id="DHU-cA-py8"/>
+                        <outlet property="btnFacetime" destination="e9q-dZ-EvA" id="I0G-a4-XCt"/>
+                        <outlet property="btnFav" destination="Td2-fC-UeY" id="1nB-c1-mx4"/>
+                        <outlet property="btnShare" destination="1lV-Ia-Ykb" id="5D0-wa-4na"/>
+                        <outlet property="btnShareLocation" destination="FS0-nL-Y4y" id="wSG-fU-VPz"/>
+                        <outlet property="btnTelephone" destination="KkZ-us-5hi" id="5pa-Xy-lqU"/>
+                        <outlet property="btnUpMessage" destination="FXw-Lr-AVv" id="wFB-hg-bjt"/>
+                        <outlet property="imageView" destination="a4E-Cs-Dfs" id="aWh-Yf-nrI"/>
+                        <outlet property="lblCompany" destination="0gl-oN-D5h" id="goZ-1L-dwY"/>
+                        <outlet property="lblName" destination="2nA-WU-R7p" id="PpU-UW-W2z"/>
+                        <outlet property="txtNotes" destination="pzr-ee-07B" id="bbl-sz-4lb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7zg-f1-y57" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1376.8115942028987" y="522.99107142857144"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="QUY-MY-kH7"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="userPhoto" width="300" height="300"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

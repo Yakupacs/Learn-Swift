@@ -14,6 +14,8 @@
 		352F34DF28AC221B00B49742 /* Iphone_Contacts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 352F34DD28AC221B00B49742 /* Iphone_Contacts.xcdatamodeld */; };
 		352F34E128AC221C00B49742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 352F34E028AC221C00B49742 /* Assets.xcassets */; };
 		352F34E428AC221C00B49742 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352F34E228AC221C00B49742 /* LaunchScreen.storyboard */; };
+		357A69B128AD2BB60052EFAA /* ViewControllerAddUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357A69B028AD2BB60052EFAA /* ViewControllerAddUser.swift */; };
+		357A69B828AD47DA0052EFAA /* ViewControllerDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357A69B728AD47DA0052EFAA /* ViewControllerDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		352F34E028AC221C00B49742 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		352F34E328AC221C00B49742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		352F34E528AC221C00B49742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		357A69B028AD2BB60052EFAA /* ViewControllerAddUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAddUser.swift; sourceTree = "<group>"; };
+		357A69B728AD47DA0052EFAA /* ViewControllerDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				352F34D428AC221B00B49742 /* AppDelegate.swift */,
 				352F34D628AC221B00B49742 /* SceneDelegate.swift */,
 				352F34D828AC221B00B49742 /* ViewController.swift */,
+				357A69B028AD2BB60052EFAA /* ViewControllerAddUser.swift */,
+				357A69B728AD47DA0052EFAA /* ViewControllerDetails.swift */,
 				352F34DA28AC221B00B49742 /* Main.storyboard */,
 				352F34E028AC221C00B49742 /* Assets.xcassets */,
 				352F34E228AC221C00B49742 /* LaunchScreen.storyboard */,
@@ -140,6 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				357A69B128AD2BB60052EFAA /* ViewControllerAddUser.swift in Sources */,
+				357A69B828AD47DA0052EFAA /* ViewControllerDetails.swift in Sources */,
 				352F34D928AC221B00B49742 /* ViewController.swift in Sources */,
 				352F34DF28AC221B00B49742 /* Iphone_Contacts.xcdatamodeld in Sources */,
 				352F34D528AC221B00B49742 /* AppDelegate.swift in Sources */,
