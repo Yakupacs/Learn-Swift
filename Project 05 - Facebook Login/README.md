@@ -16,6 +16,7 @@
 | Random select image |
 | Control login page |
 
+<hr>
 
 <br>
 
