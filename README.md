@@ -41,7 +41,7 @@ SWIFT
 | Countdown mobile app  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
 | Break time reminder mobile app  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
 | Mood logging mobile app  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
-| To-do list mobile app  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
+| To-do list mobile app  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Joke telling bot mobile app  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
 | Wallpaper mobile app  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
 | Weather App  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
