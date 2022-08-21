@@ -6,7 +6,7 @@
 | I Learned How To |
 | :--- |
 | Use API Keys |
-| Learn MVVC Architecture |
+| Learn MVVC Architecture |
 
 
 
