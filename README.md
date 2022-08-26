@@ -35,6 +35,7 @@ SWIFT
 | Movie Serie App  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Counting clicks  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Found the random number  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
+| The Hangman Game  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Facebook Login  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Catch The User  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Maps App  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
