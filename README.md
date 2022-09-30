@@ -39,7 +39,7 @@ SWIFT
 | SQLite  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | URLSession  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Alamofire  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
-| Firebase  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
+| Firebase  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | VIPER Pattern  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
 | 2D Games  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 
