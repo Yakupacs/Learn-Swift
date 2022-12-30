@@ -22,6 +22,8 @@ class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
     
     func initProducts(category : Category){
         products = DataService.instance.getProducts(forCategoryTitle: category.title)
+        navigationItem.title = category.title
+        navigationItem.backBarButtonItem?.title = ""
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
