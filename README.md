@@ -31,16 +31,16 @@ SWIFT
 | UITableView  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | UITabBar  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | UICollectionView  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
-| UISearchBar  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> 
+| UISearchBar  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> 
 | UIMapKit  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> 
-| Notification Center  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> 
+| Notification Center  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> 
 | UserDefaults  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Core Data  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | SQLite  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | URLSession  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Alamofire  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | Firebase  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
-| VIPER Pattern  | <img width=13px src="https://cdn-icons-png.flaticon.com/512/71/71397.png"> |
+| VIPER Pattern  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 | 2D Games  | <img width=13px src="https://icon-library.com/images/completed-icon/completed-icon-6.jpg"> |
 
 
