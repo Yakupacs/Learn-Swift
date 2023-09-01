@@ -13,26 +13,33 @@ class ViewController: UIViewController {
     @IBOutlet weak var lblTime: UILabel!
     
     var timer = Timer()
+    var sign = 0
     var myTime = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        myTime = 15
+        myTime = 5
         lblTime.text = "Time: \(myTime)"
     }
 
     @IBAction func Start(_ sender: Any) {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerFunction), userInfo: nil, repeats: true)
+        if (sign == 0)
+        {
+            lblTime.text = "Time: \(myTime)"
+            sign = 1
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerFunction), userInfo: nil, repeats: true)
+        }
     }
     
     @objc func timerFunction(){
-        lblTime.text = "Time: \(myTime)"
         myTime = myTime - 1
+        lblTime.text = "Time: \(myTime)"
         
         if myTime == 0 {
-            myTime = 15
+            myTime = 5
             lblTime.text = "Time is up!"
+            sign = 0
             timer.invalidate()
         }
     }
