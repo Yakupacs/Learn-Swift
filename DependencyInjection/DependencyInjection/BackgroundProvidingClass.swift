@@ -11,7 +11,14 @@ import UIKit
 class BackgroundProvidingClass : BackgroundProviderProtocol
 {
     var backgroundColor: UIColor {
-        let backgroundColors : [UIColor] = [.systemCyan, .systemMint, .systemTeal, .systemIndigo, .systemRed, .cyan, .darkGray, .orange]
+        let backgroundColors : [UIColor] = [.systemCyan,
+                                            .systemMint,
+                                            .systemTeal,
+                                            .systemIndigo,
+                                            .systemRed,
+                                            .cyan,
+                                            .darkGray,
+                                            .orange]
         return backgroundColors.randomElement()!
     }
     

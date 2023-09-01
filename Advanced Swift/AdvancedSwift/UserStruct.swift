@@ -12,7 +12,7 @@ struct UserStruct{
     var name: String
     var age: Int
     var job: String
-    // Kendi kendine initialize
+    // Self initialize
     
     mutating func ageAddOne(){
         self.age += 1

@@ -48,13 +48,8 @@ yakupStructCopy.age = 35
 // value type -> struct
 // kopyalama yapıldığında iki obje var.
 
-//print(yakupClass.age)
 yakupClass.ageAddOne()
-//print(yakupClass.age)
-
-//print(yakupStruct.age)
 yakupStruct.ageAddOne()
-//print(yakupStruct.age)
 
 
 // Tuple
