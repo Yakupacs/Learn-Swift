@@ -26,7 +26,8 @@ LEARN SWIFT
 9. [Coder Swag App](https://github.com/Yakupacs/Learn-Swift/tree/master/Project%2009%20-%20Coder%20Swag%20App)<br><br>
 <img width="200" src="https://user-images.githubusercontent.com/73075252/210116402-5780dfab-3d15-4450-8803-9fe0e46bcc5b.png"><br>
 10. [Currency Converter](https://github.com/Yakupacs/Learn-Swift/tree/master/Project%2010%20-%20CurrencyConverter)<br>
-11. [What Is In The Photo App?](https://github.com/Yakupacs/Learn-Swift/tree/master/Project%2011%20-%20What%20is%20in%20the%20photo%20app) (CoreML, Vision)<br>
+11. [What Is In The Photo App?](https://github.com/Yakupacs/Learn-Swift/tree/master/Project%2011%20-%20What%20is%20in%20the%20photo%20app) (CoreML, Vision)<br><br>
+<img width="200" src="https://github.com/Yakupacs/Learn-Swift/assets/73075252/196839fd-9aab-4157-9adb-2c8528c32f44"><br>
 12. [Coins](https://github.com/Yakupacs/Learn-Swift/tree/master/Project%2012%20-%20Coins%20VIPER) (VIPER)<br>
 13. [Goal Post App](https://github.com/Yakupacs/Learn-Swift/tree/master/Project%2013%20-%20Goal%20Post%20App%20on%20CoreData) (Local Host)<br><br>
 <img width=200 src="https://user-images.githubusercontent.com/73075252/210182603-98dcdb37-7ab2-4f1a-824f-49f744add1c3.png"><br>
