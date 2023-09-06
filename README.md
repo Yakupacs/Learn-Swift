@@ -2,10 +2,11 @@
 LEARN SWIFT
 </h1>
 
-### Description
+## Description
 ##### The projects from the iOS Development courses I took on platforms such as Coursera, Udemy, Patika, and BTK Academy are available in this repository.
 
-### Projects
+## Projects
+
 1. [Simple Stop Watch](https://github.com/Yakupacs/Learn-Swift/tree/master/Project%2001%20-%20Simple%20Stop%20Watch)<br><br>
 <img width="200px" src="https://user-images.githubusercontent.com/73075252/184854122-6a45c171-e4ad-4a58-b7bd-7839f68963af.gif"><br>
 2. [Movie Serie App](https://github.com/Yakupacs/Learn-Swift/tree/master/Project%2002%20-%20Movie%20Serie%20App)<br><br>
