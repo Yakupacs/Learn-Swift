@@ -28,7 +28,7 @@ LEARN SWIFT
 10. [Currency Converter](https://github.com/Yakupacs/Learn-Swift/tree/master/Project%2010%20-%20CurrencyConverter)<br>
 11. [What Is In The Photo App?](https://github.com/Yakupacs/Learn-Swift/tree/master/Project%2011%20-%20What%20is%20in%20the%20photo%20app) (CoreML, Vision)<br>
 12. [Coins](https://github.com/Yakupacs/Learn-Swift/tree/master/Project%2012%20-%20Coins%20VIPER) (VIPER)<br>
-13. [Goal Post App](https://github.com/Yakupacs/Learn-Swift/tree/master/Project%2012%20-%20Goal%20Post%20App%20on%20CoreData) (Local Host)<br><br>
+13. [Goal Post App](https://github.com/Yakupacs/Learn-Swift/tree/master/Project%2013%20-%20Goal%20Post%20App%20on%20CoreData) (Local Host)<br><br>
 <img width=200 src="https://user-images.githubusercontent.com/73075252/210182603-98dcdb37-7ab2-4f1a-824f-49f744add1c3.png"><br>
-14. [Todo App](https://github.com/Yakupacs/Learn-Swift/tree/master/Project%2013%20-%20Todo%20App%20on%20Localhost) (Local Host)<br>
-15. [Crypto Crazy App](https://github.com/Yakupacs/Learn-Swift/tree/master/Project%2014%20-%20Crypto%20Crazy%20MVVM%20App) (MVVM)<br>
+14. [Todo App](https://github.com/Yakupacs/Learn-Swift/tree/master/Project%2014%20-%20Todo%20App%20on%20Localhost) (Local Host)<br>
+15. [Crypto Crazy App](https://github.com/Yakupacs/Learn-Swift/tree/master/Project%2015%20-%20Crypto%20Crazy%20MVVM%20App) (MVVM)<br>
