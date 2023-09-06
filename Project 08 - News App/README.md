@@ -6,11 +6,12 @@
 | I Learned How To |
 | :--- |
 | Use API Keys |
-| Learn MVVC Architecture |
+| Learn MVVM Architecture |
 
 
 
 <br>
 
-https://user-images.githubusercontent.com/73075252/185807580-cd8ecd30-4bc9-461f-9474-1ea4d5d7d0da.mov
+<img width="400" src="https://github.com/Yakupacs/Learn-Swift/assets/73075252/c5c2358c-72e7-443d-9ce7-220595925b3d"><br>
+
 
