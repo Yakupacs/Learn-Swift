@@ -21,7 +21,7 @@ LEARN SWIFT
 <img width="200px" src="https://user-images.githubusercontent.com/73075252/184960282-66beac65-028f-4459-85a0-d51a0fa739d2.gif"><br>
 7. [Todo List](https://github.com/Yakupacs/Learn-Swift/tree/master/Project%2007%20-%20Todo%20List)<br><br>
 <img width="200" src="https://user-images.githubusercontent.com/73075252/185427752-b7281769-7b5c-4b0c-a711-65218334628b.png"><br>
-8. [News App](https://github.com/Yakupacs/Learn-Swift/assets/73075252/5ca59f5d-a447-4818-ad87-e9edc97355ed)<br><br>
+8. [News App](https://github.com/Yakupacs/Learn-Swift/assets/73075252/5ca59f5d-a447-4818-ad87-e9edc97355ed) (MVVM)<br><br>
 <img width="200" src="https://github.com/Yakupacs/Learn-Swift/assets/73075252/c5c2358c-72e7-443d-9ce7-220595925b3d"><br>
 9. [Coder Swag App](https://github.com/Yakupacs/Learn-Swift/tree/master/Project%2009%20-%20Coder%20Swag%20App)<br><br>
 <img width="200" src="https://user-images.githubusercontent.com/73075252/210116402-5780dfab-3d15-4450-8803-9fe0e46bcc5b.png"><br>
